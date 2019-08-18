@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     devServer: {            
-        open: true
+        open: true,
+        port: 1337,
       },
     plugins: [
         new extractTextWebpackPlugin('style/style.css'),
