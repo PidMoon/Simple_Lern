@@ -41,6 +41,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "@material-ui/core": "^4.3.2",
     "@storybook/react": "^5.1.11",
     "css-loader": "^2.1.1",
     "style-loader": "^0.23.1",
