@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-config-prettier",
+        "tslint-react",
+        "tslint-eslint-rules",
+        "tslint-react-hooks"
+    ],
+    "rules": {
+        "max-line-length": [true, 120],
+        "no-implicit-dependencies": false,
+        "no-trailing-whitespace": true,
+        "quotemark": [true, "single"],
+        "curly": true,
+        "object-curly-spacing": [true,"never"]
+    }
+}
