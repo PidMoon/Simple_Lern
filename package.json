@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --env.production=prod",
     "server": "webpack-dev-server --env.production=build",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "tslint": "tslint './src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kodigans/React-config/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tslint './src/**/*.{ts,tsx}'"
+    }
   },
   "homepage": "https://github.com/kodigans/React-config#readme",
   "devDependencies": {
@@ -31,10 +37,17 @@
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.5",
+    "prettier": "1.18.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.2.1",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
