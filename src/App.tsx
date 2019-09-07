@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 
 function App() {
-    let mission: string = 'Mission completed';
+    const mission = 'Mission completed';
 
     return (
         <h1>
