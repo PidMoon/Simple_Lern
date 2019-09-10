@@ -1,15 +1,16 @@
 
 import * as React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 function App() {
     const mission = 'Mission completed';
 
     return (
-        <h1>
+        <Router>
             {mission}
-        </h1>
+        </Router>
     )
 };
 
