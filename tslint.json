@@ -12,6 +12,9 @@
         "no-trailing-whitespace": true,
         "quotemark": [true, "single"],
         "curly": true,
-        "object-curly-spacing": [true,"never"]
+        "object-curly-spacing": [true,"never"],
+        "interface-name": [true, "never-prefix"],
+        "no-empty-interface": false,
+        "no-empty": true
     }
 }
